@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<Reflection>
+    <class name="BRTTIRefCount" base="root class" />
+    <class name="BPersistent" base="BRTTIRefCount">
+        <prop name="Name" type="String" />
+    </class>
+    <class name="JointDescManager" base="BPersistent">
+        <prop name="Joint Desc Array" type="Fct" />
+    </class>
+    <class name="BRTTIRefCount" base="root class" />
+    <class name="BPersistent" base="BRTTIRefCount">
+        <prop name="Name" type="String" />
+    </class>
+    <class name="JointDesc" base="BPersistent">
+        <prop name="Type" type="U32" />
+        <prop name="Object1" type="String" />
+        <prop name="Object2" type="String" />
+        <prop name="Anchor1" type="Vec3f" />
+        <prop name="Anchor2" type="Vec3f" />
+        <prop name="Axis1" type="Vec3f" />
+        <prop name="Axis2" type="Vec3f" />
+        <prop name="Normal1" type="Vec3f" />
+        <prop name="Normal2" type="Vec3f" />
+        <prop name="Breakable" type="Bool" />
+        <prop name="LimitsEnabled" type="Bool" />
+        <prop name="LimitMin" type="Float" />
+        <prop name="LimitMax" type="Float" />
+        <prop name="BreakLimit" type="U32" />
+    </class>
+    <class name="BRTTIRefCount" base="root class" />
+    <class name="BPersistent" base="BRTTIRefCount">
+        <prop name="Name" type="String" />
+    </class>
+    <class name="JointLimitDesc" base="BPersistent">
+        <prop name="Type" type="U32" />
+        <prop name="Value" type="F32" />
+        <prop name="Restitution" type="F32" />
+        <prop name="Spring" type="F32" />
+        <prop name="Damping" type="F32" />
+    </class>
+    <data class="JointDescManager" id="0x541A8640">
+        <prop name="Name" data="JointDescs Manager" />
+        <prop name="Joint Desc Array" elements="2">
+            <funcpropdata>
+                <data class="JointDesc" id="0x86331780">
+                    <prop name="Name" data="JOINT_STOCK90_BONNET" />
+                    <prop name="Type" data="1" />
+                    <prop name="Object1" data="COLLISION_CONVEX_STOCK90_CHASSIS_LODA" />
+                    <prop name="Object2" data="COLLISION_CONVEX_STOCK90_BONNET_LODA" />
+                    <prop name="Anchor1" data="-3.42603e-005;0.840693;-0.986403" />
+                    <prop name="Anchor2" data="-3.42603e-005;0.840693;-0.986403" />
+                    <prop name="Axis1" data="-0.999996;0.00189942;-0.00204959" />
+                    <prop name="Axis2" data="-0.999996;0.00189942;-0.00204959" />
+                    <prop name="Normal1" data="0.00204583;-0.0019827;-0.999996" />
+                    <prop name="Normal2" data="0.00204583;-0.0019827;-0.999996" />
+                    <prop name="Breakable" data="false" />
+                    <prop name="LimitsEnabled" data="true" />
+                    <prop name="LimitMin" data="5" />
+                    <prop name="LimitMax" data="60" />
+                    <prop name="BreakLimit" data="0" />
+                </data>
+                <data class="JointDesc" id="0x86331810">
+                    <prop name="Name" data="JOINT_STOCK90_BOOT" />
+                    <prop name="Type" data="1" />
+                    <prop name="Object1" data="COLLISION_CONVEX_STOCK90_CHASSIS_LODA" />
+                    <prop name="Object2" data="COLLISION_CONVEX_STOCK90_BOOT_LODA" />
+                    <prop name="Anchor1" data="3.42459e-005;0.840693;1.62551" />
+                    <prop name="Anchor2" data="3.42459e-005;0.840693;1.62551" />
+                    <prop name="Axis1" data="0.999996;0.00189942;0.00204974" />
+                    <prop name="Axis2" data="0.999996;0.00189942;0.00204974" />
+                    <prop name="Normal1" data="-0.00204598;-0.0019827;0.999996" />
+                    <prop name="Normal2" data="-0.00204598;-0.0019827;0.999996" />
+                    <prop name="Breakable" data="false" />
+                    <prop name="LimitsEnabled" data="true" />
+                    <prop name="LimitMin" data="5" />
+                    <prop name="LimitMax" data="95" />
+                    <prop name="BreakLimit" data="0" />
+                </data>
+            </funcpropdata>
+        </prop>
+    </data>
+</Reflection>

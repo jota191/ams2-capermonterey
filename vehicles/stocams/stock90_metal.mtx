@@ -1,0 +1,35 @@
+<material VERSION="v1.0.0.1" name="STOCK90_METAL" shader="render\shaders\vehicles_basic.fx" technique="VehicleBasic" supportsSpecialisedLighting="false" fog="false" antialias="1" numparams="7" cull="EBFCT_ANTICLOCKWISE">
+  <shaderparam name="diffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\common_metal03_diff.dds" />
+  </shaderparam>
+  <shaderparam name="specularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_METAL03_SPEC.dds" />
+  </shaderparam>
+  <shaderparam name="fresnelFactor" type="EPT_F32">
+    <value v="0.15" />
+  </shaderparam>
+  <shaderparam name="minSpecPower" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="maxSpecPower" type="EPT_F32">
+    <value v="256" />
+  </shaderparam>
+  <shaderparam name="globalSpecularFactor" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="globalEMapFactor" type="EPT_F32">
+    <value v="0.45" />
+  </shaderparam>
+  <depthparams>
+    <enabled e="true" />
+    <writeenabled w="true" />
+  </depthparams>
+  <alphablendparams>
+    <enabled e="false" />
+  </alphablendparams>
+  <define name="USE_SPECULAR" />
+  <define name="ENV_MAPPING" />
+  <define name="USE_FRESNEL" />
+</material>

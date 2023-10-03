@@ -1,0 +1,58 @@
+<material VERSION="v1.0.0.1" name="STOCK90_RIM_BLUR" shader="render\shaders\wheels_translucent.fx" technique="Wheels_Translucent" supportsSpecialisedLighting="true" fog="false" antialias="1" numparams="13" cull="EBFCT_ANTICLOCKWISE">
+  <shaderparam name="angularVelocity" type="EPT_F32">
+    <value v="0" />
+  </shaderparam>
+  <shaderparam name="minBlurVelocity" type="EPT_F32">
+    <value v="10" />
+  </shaderparam>
+  <shaderparam name="maxBlurVelocity" type="EPT_F32">
+    <value v="40" />
+  </shaderparam>
+  <shaderparam name="diffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\STOCK90_WHEEL_BLACK_DIFF_00.dds" />
+  </shaderparam>
+  <shaderparam name="specularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\STOCK90_WHEEL_BLACK_SPEC_00.dds" />
+  </shaderparam>
+  <shaderparam name="normalTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\STOCK90_WHEEL_NORM_00.dds" />
+  </shaderparam>
+  <shaderparam name="blurredDiffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\STOCK90_WHEEL_BLACK_DIFF_01.dds" />
+  </shaderparam>
+  <shaderparam name="blurredSpecularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\STOCK90_WHEEL_BLACK_SPEC_01.dds" />
+  </shaderparam>
+  <shaderparam name="fresnelFactor" type="EPT_F32">
+    <value v="0.15" />
+  </shaderparam>
+  <shaderparam name="minSpecPower" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="maxSpecPower" type="EPT_F32">
+    <value v="256" />
+  </shaderparam>
+  <shaderparam name="globalSpecularFactor" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="globalEMapFactor" type="EPT_F32">
+    <value v="0.6" />
+  </shaderparam>
+  <depthparams>
+    <enabled e="true" />
+    <writeenabled w="false" />
+  </depthparams>
+  <alphablendparams>
+    <enabled e="true" />
+    <sourceblend sb="EBF_SOURCE_ALPHA" />
+    <destblend db="EBF_INV_SOURCE_ALPHA" />
+    <blendop bo="EBO_ADD" />
+  </alphablendparams>
+  <define name="USE_FRESNEL" />
+  <define name="ENV_MAPPING" />
+</material>

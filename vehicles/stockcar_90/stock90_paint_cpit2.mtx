@@ -1,0 +1,42 @@
+<material VERSION="v1.0.0.1" name="STOCK90_PAINT_CPIT2" shader="render\shaders\vehicles_basic.fx" technique="VehicleBasic" supportsSpecialisedLighting="false" fog="false" antialias="1" numparams="9" cull="EBFCT_ANTICLOCKWISE">
+  <shaderparam name="diffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_PAINT_CPIT_BLACK_DIFF.dds" />
+  </shaderparam>
+  <shaderparam name="specularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_PAINT_CPIT_SPECULAR.dds" />
+  </shaderparam>
+  <shaderparam name="fresnelFactor" type="EPT_F32">
+    <value v="0.55" />
+  </shaderparam>
+  <shaderparam name="minSpecPower" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="maxSpecPower" type="EPT_F32">
+    <value v="56" />
+  </shaderparam>
+  <shaderparam name="globalSpecularFactor" type="EPT_F32">
+    <value v="0.6" />
+  </shaderparam>
+  <shaderparam name="globalEMapFactor" type="EPT_F32">
+    <value v="0.3" />
+  </shaderparam>
+  <shaderparam name="specularConstant" type="EPT_VEC4">
+    <value v="0.54902 0.54902 0.54902 0.25" />
+  </shaderparam>
+  <shaderparam name="specularConstantAlpha" type="EPT_F32">
+    <value v="0.25" />
+  </shaderparam>
+  <depthparams>
+    <enabled e="true" />
+    <writeenabled w="true" />
+  </depthparams>
+  <alphablendparams>
+    <enabled e="false" />
+  </alphablendparams>
+  <define name="USE_SPECULAR" />
+  <define name="ENV_MAPPING" />
+  <define name="USE_FRESNEL" />
+  <define name="SPECULAR_CONSTANT" />
+</material>

@@ -1,0 +1,50 @@
+<material VERSION="v1.0.0.1" name="STOCK90_CARPET" shader="render\shaders\vehicles_basic.fx" technique="VehicleBasic" supportsSpecialisedLighting="false" fog="false" antialias="1" numparams="11" cull="EBFCT_ANTICLOCKWISE">
+  <shaderparam name="diffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\common_carpet_black_diff.dds" />
+  </shaderparam>
+  <shaderparam name="specularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\common_carpet_black_diff.dds" />
+  </shaderparam>
+  <shaderparam name="normalTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\common_carpet_norm.dds" />
+  </shaderparam>
+  <shaderparam name="specialNormalMap" type="EPT_BOOL">
+    <value v="false" />
+  </shaderparam>
+  <shaderparam name="fresnelFactor" type="EPT_F32">
+    <value v="0.6" />
+  </shaderparam>
+  <shaderparam name="alcantaraColour" type="EPT_VEC4">
+    <value v="0.05098 0.05098 0.05098 1" />
+  </shaderparam>
+  <shaderparam name="minSpecPower" type="EPT_F32">
+    <value v="5" />
+  </shaderparam>
+  <shaderparam name="maxSpecPower" type="EPT_F32">
+    <value v="6" />
+  </shaderparam>
+  <shaderparam name="globalSpecularFactor" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="specularConstant" type="EPT_VEC4">
+    <value v="0.270588 0.270588 0.270588 0.1" />
+  </shaderparam>
+  <shaderparam name="specularConstantAlpha" type="EPT_F32">
+    <value v="0.1" />
+  </shaderparam>
+  <depthparams>
+    <enabled e="true" />
+    <writeenabled w="true" />
+  </depthparams>
+  <alphablendparams>
+    <enabled e="false" />
+  </alphablendparams>
+  <define name="USE_SPECULAR" />
+  <define name="NORMAL_MAPPING" />
+  <define name="USE_FRESNEL" />
+  <define name="ALCANTARA" />
+  <define name="SPECULAR_CONSTANT" />
+</material>

@@ -1,0 +1,57 @@
+<material VERSION="v1.0.0.1" name="STOCK90_TIRE" shader="render\shaders\tyres.fx" technique="Tyres" supportsSpecialisedLighting="false" fog="false" antialias="1" numparams="13" cull="EBFCT_ANTICLOCKWISE">
+  <shaderparam name="textureRepeat" type="EPT_F32">
+    <value v="0" />
+  </shaderparam>
+  <shaderparam name="angularVelocity" type="EPT_F32">
+    <value v="0" />
+  </shaderparam>
+  <shaderparam name="axialRotation" type="EPT_F32">
+    <value v="0" />
+  </shaderparam>
+  <shaderparam name="minBlurVelocity" type="EPT_F32">
+    <value v="10" />
+  </shaderparam>
+  <shaderparam name="maxBlurVelocity" type="EPT_F32">
+    <value v="40" />
+  </shaderparam>
+  <shaderparam name="dustiness" type="EPT_F32">
+    <value v="0" />
+  </shaderparam>
+  <shaderparam name="diffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\tire_plain_diff_00.dds" />
+  </shaderparam>
+  <shaderparam name="specularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\TIRE_STOCK90_SPEC_00.dds" />
+  </shaderparam>
+  <shaderparam name="normalTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\TIRE_STOCK90_NORM_00.dds" />
+  </shaderparam>
+  <shaderparam name="blurredDiffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\tire_plain_diff_01.dds" />
+  </shaderparam>
+  <shaderparam name="blurredSpecularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\TIRE_STOCK90_SPEC_01.dds" />
+  </shaderparam>
+  <shaderparam name="blurredNormalTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_NORMAL_DUMMY.dds" />
+  </shaderparam>
+  <shaderparam name="dustTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_TYRE_DUST_00_DIFF.dds" />
+  </shaderparam>
+  <depthparams>
+    <enabled e="true" />
+    <writeenabled w="true" />
+  </depthparams>
+  <alphablendparams>
+    <enabled e="false" />
+  </alphablendparams>
+  <define name="DUST_MAPPING" />
+  <define name="ENV_MAPPING" />
+</material>

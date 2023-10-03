@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<Reflection>
+    <class name="BRTTIRefCount" base="root class" />
+    <class name="BPersistent" base="BRTTIRefCount">
+        <prop name="Name" type="String" />
+    </class>
+    <class name="DynamicObjectDesc" base="BPersistent">
+        <prop name="Type" type="U32" />
+        <prop name="BoundingSphere" type="Vec4f" />
+        <prop name="Shapes" type="Fct" />
+    </class>
+    <class name="BRTTIRefCount" base="root class" />
+    <class name="BPersistent" base="BRTTIRefCount">
+        <prop name="Name" type="String" />
+    </class>
+    <class name="ShapeDesc" base="BPersistent">
+        <prop name="Format" type="U32" />
+        <prop name="Type" type="U32" />
+        <prop name="Width" type="F32" />
+        <prop name="Height" type="F32" />
+        <prop name="Length" type="F32" />
+        <prop name="Mass" type="F32" />
+        <prop name="Material CRC" type="U32" />
+        <prop name="Relative Position" type="Vec3f" />
+        <prop name="Relative Orientation" type="Mtx3f" />
+        <prop name="Mesh Data Size" type="U32" />
+        <prop name="Vertex Count" type="U32" />
+        <prop name="Trigger" type="Bool" />
+        <prop name="Vertices" type="Fct" />
+        <prop name="Mesh Data" type="Fct" />
+    </class>
+    <class name="BRTTIRefCount" base="root class" />
+    <class name="BPersistent" base="BRTTIRefCount">
+        <prop name="Name" type="String" />
+    </class>
+    <class name="Vertex" base="BPersistent">
+        <prop name="Vertex" type="Vec3f" />
+    </class>
+    <data class="DynamicObjectDesc" id="0x14C840">
+        <prop name="Name" data="COLLISION_CONVEX_MONTANA" />
+        <prop name="Type" data="4" />
+        <prop name="BoundingSphere" data="0;0;0;1" />
+        <prop name="Shapes" elements="2">
+            <funcpropdata>
+                <data class="ShapeDesc" id="0xF1184028">
+                    <prop name="Name" data="COLLISION_CONVEX_MONTANA_RWING_LODA" />
+                    <prop name="Format" data="0" />
+                    <prop name="Type" data="3" />
+                    <prop name="Width" data="1" />
+                    <prop name="Height" data="1" />
+                    <prop name="Length" data="1" />
+                    <prop name="Mass" data="15" />
+                    <prop name="Material CRC" data="0" />
+                    <prop name="Relative Position" data="0;0;0" />
+                    <prop name="Relative Orientation" data="1;0;0;0;1;0;0;0;1" />
+                    <prop name="Mesh Data Size" data="0" />
+                    <prop name="Vertex Count" data="16" />
+                    <prop name="Trigger" data="false" />
+                    <prop name="Vertices" elements="16">
+                        <funcpropdata>
+                            <data class="Vertex" id="0xA4180318">
+                                <prop name="Name" data="id0" />
+                                <prop name="Vertex" data="-0.8807;1.14391;2.05575" />
+                            </data>
+                            <data class="Vertex" id="0xA4180340">
+                                <prop name="Name" data="id1" />
+                                <prop name="Vertex" data="0.88065;1.14146;2.0535" />
+                            </data>
+                            <data class="Vertex" id="0xA4180368">
+                                <prop name="Name" data="id2" />
+                                <prop name="Vertex" data="0.880699;1.16621;2.3721" />
+                            </data>
+                            <data class="Vertex" id="0xA4180390">
+                                <prop name="Name" data="id3" />
+                                <prop name="Vertex" data="-0.8807;1.15946;2.38" />
+                            </data>
+                            <data class="Vertex" id="0xA41803B8">
+                                <prop name="Name" data="id4" />
+                                <prop name="Vertex" data="-0.470071;0.820835;1.94315" />
+                            </data>
+                            <data class="Vertex" id="0xA41803E0">
+                                <prop name="Name" data="id5" />
+                                <prop name="Vertex" data="-0.470071;0.747693;2.15681" />
+                            </data>
+                            <data class="Vertex" id="0xA4180408">
+                                <prop name="Name" data="id6" />
+                                <prop name="Vertex" data="0.47007;0.747693;2.15681" />
+                            </data>
+                            <data class="Vertex" id="0xA4180430">
+                                <prop name="Name" data="id7" />
+                                <prop name="Vertex" data="0.47007;0.820835;1.94315" />
+                            </data>
+                            <data class="Vertex" id="0xA4180458">
+                                <prop name="Name" data="id8" />
+                                <prop name="Vertex" data="-0.880701;1.01951;2.30105" />
+                            </data>
+                            <data class="Vertex" id="0xA4180480">
+                                <prop name="Name" data="id9" />
+                                <prop name="Vertex" data="-0.8807;1.05498;2.0619" />
+                            </data>
+                            <data class="Vertex" id="0xA41804A8">
+                                <prop name="Name" data="id10" />
+                                <prop name="Vertex" data="0.8807;1.05561;2.0613" />
+                            </data>
+                            <data class="Vertex" id="0xA41804D0">
+                                <prop name="Name" data="id11" />
+                                <prop name="Vertex" data="0.8807;1.01951;2.30105" />
+                            </data>
+                            <data class="Vertex" id="0xA41804F8">
+                                <prop name="Name" data="id12" />
+                                <prop name="Vertex" data="-0.8807;1.03971;2.37715" />
+                            </data>
+                            <data class="Vertex" id="0xA4180520">
+                                <prop name="Name" data="id13" />
+                                <prop name="Vertex" data="0.873924;1.03586;2.37397" />
+                            </data>
+                            <data class="Vertex" id="0xA4180548">
+                                <prop name="Name" data="id14" />
+                                <prop name="Vertex" data="0.880699;1.16136;2.37895" />
+                            </data>
+                            <data class="Vertex" id="0xA4180570">
+                                <prop name="Name" data="id15" />
+                                <prop name="Vertex" data="0.8807;1.03608;2.37397" />
+                            </data>
+                        </funcpropdata>
+                    </prop>
+                    <prop name="Mesh Data" elements="0">
+                        <funcpropdata />
+                    </prop>
+                </data>
+                <data class="ShapeDesc" id="0xF1183C30">
+                    <prop name="Name" data="COLLISION_CONVEX_MONTANA_CHASSIS_LODA" />
+                    <prop name="Format" data="0" />
+                    <prop name="Type" data="3" />
+                    <prop name="Width" data="1" />
+                    <prop name="Height" data="1" />
+                    <prop name="Length" data="1" />
+                    <prop name="Mass" data="1325" />
+                    <prop name="Material CRC" data="0" />
+                    <prop name="Relative Position" data="0;0;0" />
+                    <prop name="Relative Orientation" data="1;0;0;0;1;0;0;0;1" />
+                    <prop name="Mesh Data Size" data="0" />
+                    <prop name="Vertex Count" data="32" />
+                    <prop name="Trigger" data="false" />
+                    <prop name="Vertices" elements="32">
+                        <funcpropdata>
+                            <data class="Vertex" id="0x3FEAC908">
+                                <prop name="Name" data="id0" />
+                                <prop name="Vertex" data="0.769194;0.903273;2.1549" />
+                            </data>
+                            <data class="Vertex" id="0x3FEAC930">
+                                <prop name="Name" data="id1" />
+                                <prop name="Vertex" data="0.762211;0.194496;2.21401" />
+                            </data>
+                            <data class="Vertex" id="0x3FEAC958">
+                                <prop name="Name" data="id2" />
+                                <prop name="Vertex" data="-0.761046;0.203367;2.24382" />
+                            </data>
+                            <data class="Vertex" id="0x3FEAC980">
+                                <prop name="Name" data="id3" />
+                                <prop name="Vertex" data="-0.763229;0.906632;2.12534" />
+                            </data>
+                            <data class="Vertex" id="0x3FEAC9A8">
+                                <prop name="Name" data="id4" />
+                                <prop name="Vertex" data="-0.0365393;1.25685;0.396409" />
+                            </data>
+                            <data class="Vertex" id="0x3FEAC9D0">
+                                <prop name="Name" data="id5" />
+                                <prop name="Vertex" data="-0.916358;0.0463448;-1.7097" />
+                            </data>
+                            <data class="Vertex" id="0x3FEAC9F8">
+                                <prop name="Name" data="id6" />
+                                <prop name="Vertex" data="0.853495;0.0463448;-1.94443" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACA20">
+                                <prop name="Name" data="id7" />
+                                <prop name="Vertex" data="-0.484864;0.0463451;-2.34847" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACA48">
+                                <prop name="Name" data="id8" />
+                                <prop name="Vertex" data="-0.515409;1.22549;0.0955145" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACA70">
+                                <prop name="Name" data="id9" />
+                                <prop name="Vertex" data="0.510876;1.22559;0.501481" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACA98">
+                                <prop name="Name" data="id10" />
+                                <prop name="Vertex" data="-0.53066;0.602158;-2.21832" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACAC0">
+                                <prop name="Name" data="id11" />
+                                <prop name="Vertex" data="0;0.680906;-2.18501" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACAE8">
+                                <prop name="Name" data="id12" />
+                                <prop name="Vertex" data="-0.853656;0.715593;-1.50099" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACB10">
+                                <prop name="Name" data="id13" />
+                                <prop name="Vertex" data="0.263624;1.22169;-0.265054" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACB38">
+                                <prop name="Name" data="id14" />
+                                <prop name="Vertex" data="0.635203;0.915119;-0.63602" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACB60">
+                                <prop name="Name" data="id15" />
+                                <prop name="Vertex" data="0.65851;0.630727;-1.90618" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACB88">
+                                <prop name="Name" data="id16" />
+                                <prop name="Vertex" data="0.870077;0.659782;-1.58336" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACBB0">
+                                <prop name="Name" data="id17" />
+                                <prop name="Vertex" data="-0.75584;0.587108;-2.04035" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACBD8">
+                                <prop name="Name" data="id18" />
+                                <prop name="Vertex" data="-0.776915;0.0463449;-2.10183" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACC00">
+                                <prop name="Name" data="id19" />
+                                <prop name="Vertex" data="0.844532;0.672104;1.38165" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACC28">
+                                <prop name="Name" data="id20" />
+                                <prop name="Vertex" data="-0.867422;0.684339;1.28572" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACC50">
+                                <prop name="Name" data="id21" />
+                                <prop name="Vertex" data="0.374579;0.56945;-2.31899" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACC78">
+                                <prop name="Name" data="id22" />
+                                <prop name="Vertex" data="0.355059;0.0566249;-2.38077" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACCA0">
+                                <prop name="Name" data="id23" />
+                                <prop name="Vertex" data="0.619782;0.0488793;1.6691" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACCC8">
+                                <prop name="Name" data="id24" />
+                                <prop name="Vertex" data="-0.619782;0.0488793;1.6691" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACCF0">
+                                <prop name="Name" data="id25" />
+                                <prop name="Vertex" data="0.705571;0.579179;-2.09791" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACD18">
+                                <prop name="Name" data="id26" />
+                                <prop name="Vertex" data="0.63828;0.0463449;-2.26643" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACD40">
+                                <prop name="Name" data="id27" />
+                                <prop name="Vertex" data="-0.79942;0.0713397;1.65208" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACD68">
+                                <prop name="Name" data="id28" />
+                                <prop name="Vertex" data="-0.619778;0.0799171;2.1328" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACD90">
+                                <prop name="Name" data="id29" />
+                                <prop name="Vertex" data="0.822532;0.0713397;1.65208" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACDB8">
+                                <prop name="Name" data="id30" />
+                                <prop name="Vertex" data="-0.697292;0.903302;-0.576242" />
+                            </data>
+                            <data class="Vertex" id="0x3FEACDE0">
+                                <prop name="Name" data="id31" />
+                                <prop name="Vertex" data="0.619778;0.0799171;2.1328" />
+                            </data>
+                        </funcpropdata>
+                    </prop>
+                    <prop name="Mesh Data" elements="0">
+                        <funcpropdata />
+                    </prop>
+                </data>
+            </funcpropdata>
+        </prop>
+    </data>
+</Reflection>

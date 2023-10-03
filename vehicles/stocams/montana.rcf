@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<REPLACEMENT_SYSTEM>
+
+	<CONFIG>
+		<ALLOWUSEROVERRIDES VALUE="1" />
+		<USEROVERRIDESFILE VALUE="Vehicles\Textures\CustomLiveries\Overrides\montana\montana.xml" />
+	</CONFIG>
+
+	<!-- BASELIVERIES section describes liveries that a user can extend when overriding default liveries. These are somewhat analagous to rf genstrings 
+					  and can allow providing access to alternate materials or wheels etc. Additonally they mark explicitly which textures can be overriden.
+					  At least one is required if user overrides are enabled -->
+	<BASELIVERIES>
+		<BASELIVERY NAME="Default">
+			<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\common_white.dds" NAME="BODY" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\common_glass_clear_diff.dds" NAME="WINDSCREEN_NUMBER" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_spec.dds" NEWTEXTURE="vehicles\textures\common_paint_spec.dds" NAME="SPEC" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_fresnel.dds" NEWTEXTURE="vehicles\textures\common_paint_fresnel.dds" NAME="FRESNEL" ALLOWUSEROVERRIDE="1"/> 
+		</BASELIVERY>
+
+		<BASELIVERY NAME="Matte">
+			<REPLACE MATERIAL="vehicles\montana\montana_paint" NEWMATERIAL="Vehicles\livery_materials\ultima_matte_black_metallic.mtx" NAME="PAINT" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint.dds" NEWTEXTURE="vehicles\textures\common_white.dds" NAME="BODY" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\common_glass_clear_diff.dds" NAME="WINDSCREEN_NUMBER" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_spec.dds" NEWTEXTURE="vehicles\textures\common_paint_spec.dds" NAME="SPEC" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_fresnel.dds" NEWTEXTURE="vehicles\textures\common_paint_fresnel.dds" NAME="FRESNEL" ALLOWUSEROVERRIDE="1"/> 
+		</BASELIVERY>
+
+		<BASELIVERY NAME="Chrome">
+			<REPLACE MATERIAL="vehicles\montana\montana_paint" NEWMATERIAL="vehicles\_generic_materials\livery_standard_ultima_chrome.mtx" NAME="PAINT" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint.dds" NEWTEXTURE="vehicles\textures\common_white.dds" NAME="BODY" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\common_glass_clear_diff.dds" NAME="WINDSCREEN_NUMBER" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_spec.dds" NEWTEXTURE="vehicles\textures\common_paint_spec.dds" NAME="SPEC" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_fresnel.dds" NEWTEXTURE="vehicles\textures\common_paint_fresnel.dds" NAME="FRESNEL" ALLOWUSEROVERRIDE="1"/> 
+		</BASELIVERY>
+		
+		<BASELIVERY NAME="GreenMetallic">
+			<REPLACE MATERIAL="vehicles\montana\montana_paint" NEWMATERIAL="vehicles\_generic_materials\livery_620r_green.mtx" NAME="PAINT" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="vehicles\textures\caterham\Caterham_620_07.dds" NEWTEXTURE="vehicles\textures\common_white.dds" NAME="BODY" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\common_glass_clear_diff.dds" NAME="WINDSCREEN_NUMBER" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_spec.dds" NEWTEXTURE="vehicles\textures\common_paint_spec.dds" NAME="SPEC" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_fresnel.dds" NEWTEXTURE="vehicles\textures\common_paint_fresnel.dds" NAME="FRESNEL" ALLOWUSEROVERRIDE="1"/> 
+		</BASELIVERY>
+		
+		<BASELIVERY NAME="RedMetallic">
+			<REPLACE MATERIAL="vehicles\montana\montana_paint" NEWMATERIAL="vehicles\_generic_materials\livery_caterham_metallic_red.mtx" NAME="PAINT" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="vehicles\textures\caterham\Caterham_620_02.dds" NEWTEXTURE="vehicles\textures\common_white.dds" NAME="BODY" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\common_glass_clear_diff.dds" NAME="WINDSCREEN_NUMBER" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_spec.dds" NEWTEXTURE="vehicles\textures\common_paint_spec.dds" NAME="SPEC" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_fresnel.dds" NEWTEXTURE="vehicles\textures\common_paint_fresnel.dds" NAME="FRESNEL" ALLOWUSEROVERRIDE="1"/> 
+		</BASELIVERY>
+
+		<BASELIVERY NAME="BlueMetallic">
+			<REPLACE MATERIAL="vehicles\montana\montana_paint" NEWMATERIAL="vehicles\_generic_materials\livery_620r_blue_metalic.mtx" NAME="PAINT" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="vehicles\textures\caterham\Caterham_620_07.dds" NEWTEXTURE="vehicles\textures\common_white.dds" NAME="BODY" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\common_glass_clear_diff.dds" NAME="WINDSCREEN_NUMBER" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_spec.dds" NEWTEXTURE="vehicles\textures\common_paint_spec.dds" NAME="SPEC" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_fresnel.dds" NEWTEXTURE="vehicles\textures\common_paint_fresnel.dds" NAME="FRESNEL" ALLOWUSEROVERRIDE="1"/>  
+		</BASELIVERY>
+		
+		<BASELIVERY NAME="SilverMetallic">
+			<REPLACE MATERIAL="vehicles\montana\montana_paint" NEWMATERIAL="Vehicles\_Generic_Materials\livery_lm11_10.mtx" NAME="PAINT" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="Vehicles\Textures\Liveries\AUDI_R18_LIVERY10.dds" NEWTEXTURE="vehicles\textures\common_white.dds" NAME="BODY" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\common_glass_clear_diff.dds" NAME="WINDSCREEN_NUMBER" ALLOWUSEROVERRIDE="1"/>
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_spec.dds" NEWTEXTURE="vehicles\textures\common_paint_spec.dds" NAME="SPEC" ALLOWUSEROVERRIDE="1"/> 
+			<REPLACE TEXTURE="Vehicles\Textures\common_paint_fresnel.dds" NEWTEXTURE="vehicles\textures\common_paint_fresnel.dds" NAME="FRESNEL" ALLOWUSEROVERRIDE="1"/> 
+		</BASELIVERY>
+	</BASELIVERIES>
+
+	<!-- INPUTS section describes all inputs which can control selection of replacement items -->
+	<INPUTS>
+		<INPUT NAME="LIVERY" OPTIONS="24" />
+		<INPUT NAME="TIRE" OPTIONS="6" />
+		<INPUT NAME="DIRTTYPE" OPTIONS="3" />
+	</INPUTS>
+
+	<NAMES INPUT ="LIVERY">
+		<NAME LIVERY="51" NAME="Copa Montana #00" />
+		<NAME LIVERY="52" NAME="Copa Montana #01" />
+		<NAME LIVERY="53" NAME="Copa Montana #02" />
+		<NAME LIVERY="54" NAME="Copa Montana #04" />
+		<NAME LIVERY="55" NAME="Copa Montana #08" />
+		<NAME LIVERY="56" NAME="Copa Montana #10" />	
+		<NAME LIVERY="57" NAME="Copa Montana #11" />
+		<NAME LIVERY="58" NAME="Copa Montana #17" />		
+		<NAME LIVERY="59" NAME="Copa Montana #22" />	
+		<NAME LIVERY="60" NAME="Copa Montana #23" />
+		<NAME LIVERY="61" NAME="Copa Montana #27" />
+		<NAME LIVERY="62" NAME="Copa Montana #29" />	
+		<NAME LIVERY="63" NAME="Copa Montana #30" />	
+		<NAME LIVERY="64" NAME="Copa Montana #40" />		
+		<NAME LIVERY="65" NAME="Copa Montana #44" />	
+		<NAME LIVERY="66" NAME="Copa Montana #48" />
+		<NAME LIVERY="67" NAME="Copa Montana #49" />
+		<NAME LIVERY="68" NAME="Copa Montana #51" />
+		<NAME LIVERY="69" NAME="Copa Montana #55" />
+		<NAME LIVERY="70" NAME="Copa Montana #63" />
+		<NAME LIVERY="71" NAME="Copa Montana #70" />
+		<NAME LIVERY="72" NAME="Copa Montana #82" />		
+		<NAME LIVERY="73" NAME="Copa Montana #98" />
+		<NAME LIVERY="74" NAME="Copa Montana #99" />
+	</NAMES>
+
+	<NAMES INPUT ="TIRE">
+		<NAME TIRE="1" NAME="Soft" />
+		<NAME TIRE="2" NAME="Medium" />
+		<NAME TIRE="3" NAME="Hard" />
+		<NAME TIRE="4" NAME="Intermediate" />
+		<NAME TIRE="5" NAME="Wet" />
+		<NAME TIRE="6" NAME="Extreme" />
+	</NAMES>
+
+	<NAMES INPUT ="DIRTTYPE">
+		<NAME DIRTTYPE="1" NAME="Dirt" />
+		<NAME DIRTTYPE="2" NAME="Snow" />
+		<NAME DIRTTYPE="3" NAME="Mud" />
+	</NAMES>
+
+	<!-- DEPENDENCY section describes inputs which depend on each other in that only some combinations are permitted -->
+	<!-- this will only be used in game for the menu system, and in the editor -->
+
+	<!-- CONDITION sections define what to replace and when to replace it		-->
+	<!-- They are used in the same way for all situations				-->
+	
+	<!-- Simple case - exterior paint effecting two materials -->
+
+	<CONDITION LIVERY="51">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#00.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#00.dds" />
+	</CONDITION>
+	
+	<CONDITION LIVERY="52">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#01.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#01.dds" />
+	</CONDITION>
+	
+	<CONDITION LIVERY="53">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#02.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#02.dds" />
+	</CONDITION>
+	
+	<CONDITION LIVERY="54">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#04.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#04.dds" />
+	</CONDITION>
+	
+	<CONDITION LIVERY="55">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#08.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#08.dds" />
+	</CONDITION>		
+	
+	<CONDITION LIVERY="56">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#10.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#10.dds" />
+	</CONDITION>	
+	
+	<CONDITION LIVERY="57">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#11.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#11.dds" />
+	</CONDITION>
+	
+	<CONDITION LIVERY="58">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#17.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#17.dds" />
+	</CONDITION>	
+
+	<CONDITION LIVERY="59">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#22.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#22.dds" />
+	</CONDITION>
+
+	<CONDITION LIVERY="60">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#23.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#23.dds" />
+	</CONDITION>	
+		
+	<CONDITION LIVERY="61">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#27.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#27.dds" />
+	</CONDITION>
+
+	<CONDITION LIVERY="62">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#29.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#29.dds" />
+	</CONDITION>
+	
+	<CONDITION LIVERY="63">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#30.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#30.dds" />
+	</CONDITION>
+	
+	<CONDITION LIVERY="64">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#40.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#40.dds" />
+	</CONDITION>	
+
+	<CONDITION LIVERY="65">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#44.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#44.dds" />
+	</CONDITION>
+	
+	<CONDITION LIVERY="66">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#48.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#48.dds" />
+	</CONDITION>
+
+	<CONDITION LIVERY="67">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#49.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#49.dds" />
+	</CONDITION>	
+
+	<CONDITION LIVERY="68">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#51.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#51.dds" />
+	</CONDITION>	
+
+	<CONDITION LIVERY="69">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#55.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#55.dds" />
+	</CONDITION>	
+	
+	<CONDITION LIVERY="70">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#63.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#63.dds" />
+	</CONDITION>
+	
+	<CONDITION LIVERY="71">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#70.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#70.dds" />
+	</CONDITION>
+	
+	<CONDITION LIVERY="72">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#82.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#82.dds" />
+	</CONDITION>	
+	
+	<CONDITION LIVERY="73">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#98.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#98.dds" />
+	</CONDITION>
+	
+	<CONDITION LIVERY="74">
+		<REPLACE TEXTURE="vehicles\textures\common_paint.dds" NEWTEXTURE="vehicles\textures\montana\#99.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_white.dds" NEWTEXTURE="vehicles\textures\montana\RR_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_livery_alpha_diff.dds" NEWTEXTURE="vehicles\textures\montana\MONTA_GLASS_#99.dds" />
+	</CONDITION>
+
+	<!-- Soft Slick tire -->
+	<CONDITION TIRE="1">
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_diff.dds" NEWTEXTURE="vehicles\textures\tread_slick1_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_diff.dds" NEWTEXTURE="vehicles\textures\tread_slick1_blur_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_nmp8888.dds" NEWTEXTURE="vehicles\textures\tread_slick1_nmp8888.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_nmp8888.dds" NEWTEXTURE="vehicles\textures\tread_slick1_blur_nmp8888.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_spec.dds" NEWTEXTURE="vehicles\textures\tread_slick1_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_spec.dds" NEWTEXTURE="vehicles\textures\tread_slick1_blur_spec.dds" />
+	</CONDITION>
+
+	<!-- Medium Slick tire. In case AI uses it -->
+	<CONDITION TIRE="2">
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_diff.dds" NEWTEXTURE="vehicles\textures\tread_slick1_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_diff.dds" NEWTEXTURE="vehicles\textures\tread_slick1_blur_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_nmp8888.dds" NEWTEXTURE="vehicles\textures\tread_slick1_nmp8888.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_nmp8888.dds" NEWTEXTURE="vehicles\textures\tread_slick1_blur_nmp8888.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_spec.dds" NEWTEXTURE="vehicles\textures\tread_slick1_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_spec.dds" NEWTEXTURE="vehicles\textures\tread_slick1_blur_spec.dds" />
+	</CONDITION>
+
+	<!-- Hard Slick tire -->
+	<CONDITION TIRE="3">
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_diff.dds" NEWTEXTURE="vehicles\textures\tread_slick1_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_diff.dds" NEWTEXTURE="vehicles\textures\tread_slick1_blur_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_nmp8888.dds" NEWTEXTURE="vehicles\textures\tread_slick1_nmp8888.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_nmp8888.dds" NEWTEXTURE="vehicles\textures\tread_slick1_blur_nmp8888.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_spec.dds" NEWTEXTURE="vehicles\textures\tread_slick1_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_spec.dds" NEWTEXTURE="vehicles\textures\tread_slick1_blur_spec.dds" />
+	</CONDITION>
+
+	<!-- All-Terrain tire -->
+	<CONDITION TIRE="4">
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_diff.dds" NEWTEXTURE="vehicles\textures\tread_nitto_funha_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_diff.dds" NEWTEXTURE="vehicles\textures\tread_nitto_funha_blur_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_nmp8888.dds" NEWTEXTURE="vehicles\textures\tread_nitto_funha_nmp8888.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_nmp8888.dds" NEWTEXTURE="vehicles\textures\tread_nitto_funha_blur_nmp8888.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_spec.dds" NEWTEXTURE="vehicles\textures\tread_nitto_funha_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_spec.dds" NEWTEXTURE="vehicles\textures\tread_nitto_funha_blur_spec.dds" />
+	</CONDITION>
+
+	<!-- Rain tire -->
+	<CONDITION TIRE="5">
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_diff.dds" NEWTEXTURE="vehicles\textures\tread_rain_01_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_diff.dds" NEWTEXTURE="vehicles\textures\tread_rain_01_blur_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_nmp8888.dds" NEWTEXTURE="vehicles\textures\tread_rain_01_nmp8888.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_nmp8888.dds" NEWTEXTURE="vehicles\textures\tread_rain_01_blur_nmp8888.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_spec.dds" NEWTEXTURE="vehicles\textures\tread_rain_01_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_spec.dds" NEWTEXTURE="vehicles\textures\tread_rain_01_blur_spec.dds" />
+	</CONDITION>
+
+	<!-- Studded Ice tire -->
+	<CONDITION TIRE="6">
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_diff.dds" NEWTEXTURE="vehicles\textures\tread_nitto_ice_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_diff.dds" NEWTEXTURE="vehicles\textures\tread_nitto_ice_blur_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_nmp8888.dds" NEWTEXTURE="vehicles\textures\tread_nitto_ice_nmp8888.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_nmp8888.dds" NEWTEXTURE="vehicles\textures\tread_nitto_ice_blur_nmp8888.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_spec.dds" NEWTEXTURE="vehicles\textures\tread_nitto_ice_spec.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_blur_spec.dds" NEWTEXTURE="vehicles\textures\tread_nitto_ice_blur_spec.dds" />
+	</CONDITION>
+
+	<CONDITION DIRTTYPE="1">
+		<REPLACE TEXTURE="vehicles\textures\common_body_dirt_diff.dds" NEWTEXTURE="vehicles\textures\montana\montana_body_dirt_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_wheel_dirt.dds" NEWTEXTURE="vehicles\textures\common_wheel_dirt.dds" />
+	</CONDITION>
+  
+	<CONDITION DIRTTYPE="2">
+		<REPLACE TEXTURE="vehicles\textures\common_body_dirt_diff.dds" NEWTEXTURE="vehicles\textures\common_body_snow_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_wheel_dirt.dds" NEWTEXTURE="vehicles\textures\common_wheel_snow.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_dirt_droplets.dds" NEWTEXTURE="vehicles\textures\common_dirt_snow_droplets.dds" />
+	</CONDITION>
+	
+	<CONDITION DIRTTYPE="3">
+		<REPLACE TEXTURE="vehicles\textures\common_body_dirt_diff.dds" NEWTEXTURE="vehicles\textures\common_body_mud_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_wheel_dirt.dds" NEWTEXTURE="vehicles\textures\common_wheel_mud.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_dirt_droplets.dds" NEWTEXTURE="vehicles\textures\common_dirt_mud_droplets.dds" />
+	</CONDITION>
+	
+</REPLACEMENT_SYSTEM>

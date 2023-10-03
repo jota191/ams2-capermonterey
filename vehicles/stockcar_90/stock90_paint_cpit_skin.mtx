@@ -1,0 +1,54 @@
+<material VERSION="v1.0.0.1" name="STOCK90_PAINT_CPIT_SKIN" shader="render\shaders\bodywork2_skinned.fx" technique="Bodywork" supportsSpecialisedLighting="false" fog="false" antialias="1" numparams="12" cull="EBFCT_ANTICLOCKWISE">
+  <shaderparam name="dirtiness" type="EPT_F32">
+    <value v="0" />
+  </shaderparam>
+  <shaderparam name="fresnelFactor" type="EPT_F32">
+    <value v="0.67" />
+  </shaderparam>
+  <shaderparam name="specularConstant" type="EPT_VEC4">
+    <value v="1 1 1 0.7686" />
+  </shaderparam>
+  <shaderparam name="replaceBonnetCamEnvmap" type="EPT_BOOL">
+    <value v="false" />
+  </shaderparam>
+  <shaderparam name="diffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\common_paint.dds" />
+  </shaderparam>
+  <shaderparam name="specularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_WHITE.dds" />
+  </shaderparam>
+  <shaderparam name="dirtTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_BODY_DIRT_DIFF.dds" />
+  </shaderparam>
+  <shaderparam name="rainControlTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\common_rain_droplets.dds" />
+  </shaderparam>
+  <shaderparam name="rainTileScale" type="EPT_F32">
+    <value v="20" />
+  </shaderparam>
+  <shaderparam name="rainstreakTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\common_rain_trails.dds" />
+  </shaderparam>
+  <shaderparam name="rainStreakTileScaleU" type="EPT_F32">
+    <value v="10" />
+  </shaderparam>
+  <shaderparam name="rainAtreakTileScaleV" type="EPT_F32">
+    <value v="10" />
+  </shaderparam>
+  <depthparams>
+    <enabled e="true" />
+    <writeenabled w="true" />
+  </depthparams>
+  <alphablendparams>
+    <enabled e="false" />
+  </alphablendparams>
+  <define name="USE_FRESNEL" />
+  <define name="SPECULAR_CONSTANT" />
+  <define name="RAIN_SUPPORT" />
+  <define name="RAINSTREAK_SUPPORT" />
+</material>

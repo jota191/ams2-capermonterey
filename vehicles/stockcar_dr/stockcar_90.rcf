@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<REPLACEMENT_SYSTEM>
+	<!-- INPUTS section describes all inputs which can control selection of replacement items -->
+	<INPUTS>
+		<INPUT NAME="LIVERY" OPTIONS="9" />
+		<INPUT NAME="TIRE" OPTIONS="4" />
+		<INPUT NAME="DIRTTYPE" OPTIONS="3" />
+	</INPUTS>
+
+	<NAMES INPUT ="LIVERY">
+		<NAME LIVERY="35" NAME="#11 Chris Forsberg - Gumout"/>
+		<NAME LIVERY="33" NAME="#1 macheerou - KAOS MODDING TEAM"/>
+		<NAME LIVERY="34" NAME="#4 motsm - KAOS MODDING TEAM"/>
+		<NAME LIVERY="27" NAME="#2 Ridge Racer - Bandai Namco (Solvalou Yellow)"/>
+		<NAME LIVERY="25" NAME="#3 Ridge Racer - Bandai Namco (Nebulasray)"/>
+		<NAME LIVERY="26" NAME="#4 Ridge Racer - Bandai Namco (Ryukyu-Pacman)"/>
+		<NAME LIVERY="28" NAME="#12 Ridge Racer - Bandai Namco (Solvalou Blue)"/>
+		<NAME LIVERY="23" NAME="#41 Daytona USA - SEGA (Gallop Racing Hornet)"/>
+		<NAME LIVERY="24" NAME="#80 Project CARS - WMD"/>
+	</NAMES>
+
+	<NAMES INPUT ="TIRE">
+		<NAME TIRE="1" NAME="Soft" />
+		<NAME TIRE="4" NAME="Intermediate" />
+		<NAME TIRE="5" NAME="Wet" />
+		<NAME TIRE="6" NAME="Extreme" />
+	</NAMES>
+
+	<!-- DEPENDENCY section describes inputs which depend on each other in that only some combinations are permitted -->
+	<!-- this will only be used in game for the menu system, and in the editor -->
+
+	<!-- CONDITION sections define what to replace and when to replace it		-->
+	<!-- They are used in the same way for all situations				-->
+	
+	<!-- Simple case - exterior paint effecting two materials -->
+
+	<CONDITION LIVERY="23">
+		<REPLACE TEXTURE="Vehicles\Textures\COMMON_PAINT.dds" NEWTEXTURE="Vehicles\Textures\Liveries\stock90_23.dds" />
+                <REPLACE MATERIAL="Vehicles\stockcar_90\stock90_tire.mtx" NEWMATERIAL="Vehicles\stockcar_90\stock90_tire_blank.mtx" />
+	</CONDITION>
+
+	<CONDITION LIVERY="24">
+		<REPLACE TEXTURE="Vehicles\Textures\COMMON_PAINT.dds" NEWTEXTURE="Vehicles\Textures\Liveries\stock90_24.dds" />
+                <REPLACE MATERIAL="Vehicles\stockcar_90\stock90_tire.mtx" NEWMATERIAL="Vehicles\stockcar_90\stock90_tire_blank.mtx" />
+	</CONDITION>
+
+	<CONDITION LIVERY="25">
+		<REPLACE TEXTURE="Vehicles\Textures\COMMON_PAINT.dds" NEWTEXTURE="Vehicles\Textures\Liveries\stock90_25.dds" />
+                <REPLACE MATERIAL="Vehicles\stockcar_90\stock90_tire.mtx" NEWMATERIAL="Vehicles\stockcar_90\stock90_tire_blank.mtx" />
+	</CONDITION>
+
+	<CONDITION LIVERY="26">
+		<REPLACE TEXTURE="Vehicles\Textures\COMMON_PAINT.dds" NEWTEXTURE="Vehicles\Textures\Liveries\stock90_26.dds" />
+                <REPLACE MATERIAL="Vehicles\stockcar_90\stock90_tire.mtx" NEWMATERIAL="Vehicles\stockcar_90\stock90_tire_blank.mtx" />
+	</CONDITION>
+
+	<CONDITION LIVERY="27">
+		<REPLACE TEXTURE="Vehicles\Textures\COMMON_PAINT.dds" NEWTEXTURE="Vehicles\Textures\Liveries\stock90_27.dds" />
+                <REPLACE MATERIAL="Vehicles\stockcar_90\stock90_tire.mtx" NEWMATERIAL="Vehicles\stockcar_90\stock90_tire_blank.mtx" />
+	</CONDITION>
+
+	<CONDITION LIVERY="28">
+		<REPLACE TEXTURE="Vehicles\Textures\COMMON_PAINT.dds" NEWTEXTURE="Vehicles\Textures\Liveries\stock90_28.dds" />
+                <REPLACE MATERIAL="Vehicles\stockcar_90\stock90_tire.mtx" NEWMATERIAL="Vehicles\stockcar_90\stock90_tire_blank.mtx" />
+	</CONDITION>
+
+	<CONDITION LIVERY="33">
+		<REPLACE TEXTURE="Vehicles\Textures\COMMON_PAINT.dds" NEWTEXTURE="Vehicles\Textures\Liveries\stock90_33.dds" />
+                <REPLACE MATERIAL="Vehicles\stockcar_90\stock90_tire.mtx" NEWMATERIAL="Vehicles\stockcar_90\stock90_tire_blank.mtx" />
+	</CONDITION>
+
+	<CONDITION LIVERY="34">
+		<REPLACE TEXTURE="Vehicles\Textures\COMMON_PAINT.dds" NEWTEXTURE="Vehicles\Textures\Liveries\stock90_34.dds" />
+                <REPLACE MATERIAL="Vehicles\stockcar_90\stock90_tire.mtx" NEWMATERIAL="Vehicles\stockcar_90\stock90_tire_blank.mtx" />
+	</CONDITION>
+
+	<CONDITION LIVERY="35">
+		<REPLACE TEXTURE="Vehicles\Textures\COMMON_PAINT.dds" NEWTEXTURE="Vehicles\Textures\Liveries\stock90_35.dds" />
+	</CONDITION>
+
+	<!-- CONDITION LIVERY="30" -->
+		<!-- REPLACE TEXTURE="Vehicles\Textures\COMMON_PAINT.dds" NEWTEXTURE="Vehicles\Textures\Liveries\stock90_30.dds" / -->
+	<!-- /CONDITION -->
+
+	<!-- CONDITION LIVERY="31" -->
+		<!-- REPLACE TEXTURE="Vehicles\Textures\COMMON_PAINT.dds" NEWTEXTURE="Vehicles\Textures\Liveries\stock90_31.dds" / -->
+	<!-- /CONDITION -->
+
+	<!-- Soft Slick tire -->
+	<CONDITION TIRE="1">	
+	</CONDITION>
+
+	<!-- 'Intermediate' tire->
+	<CONDITION TIRE="4">
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_diff_00.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_diff_00.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_diff_01.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_diff_01.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_norm_00.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_norm_00.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_norm_01.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_norm_01.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_spec_00.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_spec_00.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_spec_01.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_spec_01.dds" />
+	</CONDITION>
+
+	<!-- 'Wet' tire -->
+	<CONDITION TIRE="5">
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_diff_00.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_diff_00.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_diff_01.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_diff_01.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_norm_00.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_norm_00.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_norm_01.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_norm_01.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_spec_00.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_spec_00.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_spec_01.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_spec_01.dds" />
+	</CONDITION>
+
+	<!-- 'Extreme' tire -->
+	<CONDITION TIRE="6">
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_diff_00.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_diff_00.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_diff_01.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_diff_01.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_norm_00.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_norm_00.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_norm_01.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_norm_01.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_spec_00.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_spec_00.dds" />
+		<REPLACE TEXTURE="vehicles\textures\tread_slick1_spec_01.dds" NEWTEXTURE="vehicles\textures\tread_rain_05_spec_01.dds" />
+	</CONDITION>
+
+	<CONDITION DIRTTYPE="1">
+		<REPLACE TEXTURE="vehicles\textures\common_body_dirt_diff.dds" NEWTEXTURE="vehicles\textures\common_body_dirt_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_wheel_dirt.dds" NEWTEXTURE="vehicles\textures\common_wheel_dirt.dds" />
+	</CONDITION>
+  
+	<CONDITION DIRTTYPE="2">
+		<REPLACE TEXTURE="vehicles\textures\common_body_dirt_diff.dds" NEWTEXTURE="vehicles\textures\por_991_gt3rs_body_snow_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_wheel_dirt.dds" NEWTEXTURE="vehicles\textures\common_wheel_snow.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_dirt_droplets.dds" NEWTEXTURE="vehicles\textures\common_dirt_snow_droplets.dds" />
+	</CONDITION>
+	
+	<CONDITION DIRTTYPE="3">
+		<REPLACE TEXTURE="vehicles\textures\common_body_dirt_diff.dds" NEWTEXTURE="vehicles\textures\common_body_mud_diff.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_wheel_dirt.dds" NEWTEXTURE="vehicles\textures\common_wheel_mud.dds" />
+		<REPLACE TEXTURE="vehicles\textures\common_dirt_droplets.dds" NEWTEXTURE="vehicles\textures\common_dirt_mud_droplets.dds" />
+	</CONDITION>
+	
+</REPLACEMENT_SYSTEM>

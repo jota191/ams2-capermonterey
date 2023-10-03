@@ -1,0 +1,60 @@
+<material VERSION="v1.0.0.1" name="STOCK90_DISC" shader="render\shaders\wheels.fx" technique="Wheels" supportsSpecialisedLighting="false" fog="false" antialias="1" numparams="14" cull="EBFCT_ANTICLOCKWISE">
+  <shaderparam name="angularVelocity" type="EPT_F32">
+    <value v="0" />
+  </shaderparam>
+  <shaderparam name="minBlurVelocity" type="EPT_F32">
+    <value v="10" />
+  </shaderparam>
+  <shaderparam name="maxBlurVelocity" type="EPT_F32">
+    <value v="40" />
+  </shaderparam>
+  <shaderparam name="diffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\STOCK90_DISC_DIFF_00.dds" />
+  </shaderparam>
+  <shaderparam name="specularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\STOCK90_DISC_SPEC_00.dds" />
+  </shaderparam>
+  <shaderparam name="normalTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_NORMAL_DUMMY.dds" />
+  </shaderparam>
+  <shaderparam name="blurredDiffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\STOCK90_DISC_DIFF_01.dds" />
+  </shaderparam>
+  <shaderparam name="blurredSpecularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\STOCK90_DISC_SPEC_01.dds" />
+  </shaderparam>
+  <shaderparam name="fresnelFactor" type="EPT_F32">
+    <value v="0.15" />
+  </shaderparam>
+  <shaderparam name="minSpecPower" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="maxSpecPower" type="EPT_F32">
+    <value v="256" />
+  </shaderparam>
+  <shaderparam name="globalSpecularFactor" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="globalEMapFactor" type="EPT_F32">
+    <value v="0.67" />
+  </shaderparam>
+  <shaderparam name="emissiveTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\common_disk_02_glow.dds" />
+  </shaderparam>
+  <depthparams>
+    <enabled e="true" />
+    <writeenabled w="true" />
+  </depthparams>
+  <alphablendparams>
+    <enabled e="false" />
+  </alphablendparams>
+  <define name="USE_FRESNEL" />
+  <define name="ENV_MAPPING" />
+  <define name="USE_LIGHT_CONTROL" />
+</material>

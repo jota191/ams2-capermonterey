@@ -1,0 +1,31 @@
+<material VERSION="v1.0.0.1" name="STOCK90_PAINT_FRAME_SKIN" shader="render\shaders\vehicles_basic_skinned.fx" technique="VehicleBasic" supportsSpecialisedLighting="false" fog="false" antialias="1" numparams="6" cull="EBFCT_ANTICLOCKWISE">
+  <shaderparam name="diffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_PAINT_CPIT_GREY01_DIFF.dds" />
+  </shaderparam>
+  <shaderparam name="specularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_PAINT_CPIT_SPECULAR.dds" />
+  </shaderparam>
+  <shaderparam name="fresnelFactor" type="EPT_F32">
+    <value v="0.67" />
+  </shaderparam>
+  <shaderparam name="minSpecPower" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="maxSpecPower" type="EPT_F32">
+    <value v="32" />
+  </shaderparam>
+  <shaderparam name="globalSpecularFactor" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <depthparams>
+    <enabled e="true" />
+    <writeenabled w="true" />
+  </depthparams>
+  <alphablendparams>
+    <enabled e="false" />
+  </alphablendparams>
+  <define name="USE_SPECULAR" />
+  <define name="USE_FRESNEL" />
+</material>

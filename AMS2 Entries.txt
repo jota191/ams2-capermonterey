@@ -1,0 +1,24 @@
+Entries for AMS2
+vehicles\stocams\stocams.crd
+
+RECORD RWD_MONTANA2 l_driveline
+	name "stocams"
+	contents RWD_MODERN_SEQUENTIAL_FLEX_SOFT_FR_v3
+	dl:minhz	3000
+
+
+Caper Monterey Stockcar very Alpha version (v0.1) issues:
+- Cockpit doesn't work
+- Driver model is present but not yet adjusted
+- Physics = Montana
+- Shadow Issues
+- CRD entry is still fucked
+
+Notes:
+stocams is the vehicle name for AMS2 version
+
+stockcar_90 is the vehicle name for PC2 nascar version
+stockcar_dr is the vehicle name for PC2 drift version
+
+Physics entries for both stockcar_90 and stockcar_dr alongside montana entries are there
+I included ford fusion from PC2's physics files as a baseline example too

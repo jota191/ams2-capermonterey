@@ -1,0 +1,93 @@
+<material VERSION="v1.0.0.1" name="STOCK90_WINDOWS" shader="render\shaders\glass.fx" technique="Glass" supportsSpecialisedLighting="true" fog="false" antialias="1" numparams="24" cull="EBFCT_ANTICLOCKWISE">
+  <shaderparam name="diffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\common_glass_various_diff.dds" />
+  </shaderparam>
+  <shaderparam name="specularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\common_glass_various_spec.dds" />
+  </shaderparam>
+  <shaderparam name="minSpecPower" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="maxSpecPower" type="EPT_F32">
+    <value v="1024" />
+  </shaderparam>
+  <shaderparam name="globalSpecularFactor" type="EPT_F32">
+    <value v="0.75" />
+  </shaderparam>
+  <shaderparam name="fresnelFactor" type="EPT_F32">
+    <value v="0.67" />
+  </shaderparam>
+  <shaderparam name="globalEMapFactor" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="testMode" type="EPT_BOOL">
+    <value v="false" />
+  </shaderparam>
+  <shaderparam name="crackUVoffset" type="EPT_VEC4">
+    <value v="0 0 3 5" />
+  </shaderparam>
+  <shaderparam name="sensitivity" type="EPT_F32">
+    <value v="0.7" />
+  </shaderparam>
+  <shaderparam name="rangeVisibility" type="EPT_F32">
+    <value v="5" />
+  </shaderparam>
+  <shaderparam name="crackLineScale" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="crackStrength" type="EPT_F32">
+    <value v="20" />
+  </shaderparam>
+  <shaderparam name="damageStartCracks" type="EPT_F32">
+    <value v="0.25" />
+  </shaderparam>
+  <shaderparam name="damageCrackSlope" type="EPT_F32">
+    <value v="10" />
+  </shaderparam>
+  <shaderparam name="crackFinalScale" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="crackTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_GLASS_CRACKS_NORM.dds" />
+  </shaderparam>
+  <shaderparam name="crackColour" type="EPT_VEC4">
+    <value v="0.392157 0.54902 0.47058800 0.95" />
+  </shaderparam>
+  <shaderparam name="rainControlTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\common_rain_droplets.dds" />
+  </shaderparam>
+  <shaderparam name="rainTileScaleU" type="EPT_F32">
+    <value v="30" />
+  </shaderparam>
+  <shaderparam name="rainTileScaleV" type="EPT_F32">
+    <value v="30" />
+  </shaderparam>
+  <shaderparam name="rainstreakTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\common_rain_trails.dds" />
+  </shaderparam>
+  <shaderparam name="rainStreakTileScaleU" type="EPT_F32">
+    <value v="15" />
+  </shaderparam>
+  <shaderparam name="rainAtreakTileScaleV" type="EPT_F32">
+    <value v="15" />
+  </shaderparam>
+  <depthparams>
+    <enabled e="true" />
+    <writeenabled w="false" />
+  </depthparams>
+  <alphablendparams>
+    <enabled e="true" />
+    <sourceblend sb="EBF_ONE" />
+    <destblend db="EBF_INV_SOURCE_ALPHA" />
+    <blendop bo="EBO_ADD" />
+  </alphablendparams>
+  <define name="SPECULAR_MAPPING" />
+  <define name="GECKO_CRACKS" />
+  <define name="RAIN_SUPPORT" />
+  <define name="RAINSTREAK_SUPPORT" />
+</material>

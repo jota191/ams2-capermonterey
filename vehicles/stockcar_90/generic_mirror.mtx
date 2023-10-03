@@ -1,0 +1,41 @@
+<material VERSION="v1.0.0.1" name="GENERIC_MIRROR" shader="render\shaders\hud_solid.fx" technique="HUD" supportsSpecialisedLighting="false" fog="false" antialias="1" numparams="10" cull="EBFCT_ANTICLOCKWISE">
+  <shaderparam name="diffuseTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_MIRROR.dds" />
+  </shaderparam>
+  <shaderparam name="specularTexture" type="EPT_TEXTURE">
+    <type t="ET_STANDARD" />
+    <value v="vehicles\textures\COMMON_BLANK.dds" />
+  </shaderparam>
+  <shaderparam name="specularRollOff" type="EPT_F32">
+    <value v="0.1" />
+  </shaderparam>
+  <shaderparam name="minSpecPower" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="maxSpecPower" type="EPT_F32">
+    <value v="1024" />
+  </shaderparam>
+  <shaderparam name="globalSpecularFactor" type="EPT_F32">
+    <value v="0" />
+  </shaderparam>
+  <shaderparam name="globalTranslucencyFactor" type="EPT_F32">
+    <value v="1" />
+  </shaderparam>
+  <shaderparam name="getTransparencyFromAlpha" type="EPT_BOOL">
+    <value v="false" />
+  </shaderparam>
+  <shaderparam name="globalSelfIlluminationFactor" type="EPT_F32">
+    <value v="0.33" />
+  </shaderparam>
+  <shaderparam name="additiveSelfIllumination" type="EPT_BOOL">
+    <value v="false" />
+  </shaderparam>
+  <depthparams>
+    <enabled e="true" />
+    <writeenabled w="true" />
+  </depthparams>
+  <alphablendparams>
+    <enabled e="false" />
+  </alphablendparams>
+</material>

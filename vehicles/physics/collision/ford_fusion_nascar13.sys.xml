@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Reflection>
+    <class name="BRTTIRefCount" base="root class" />
+    <class name="BPersistent" base="BRTTIRefCount">
+        <prop name="Name" type="String" />
+    </class>
+    <class name="DynamicSystemDesc" base="BPersistent">
+        <prop name="BoundingSphere" type="Vec4f" />
+        <prop name="Dynamic System Descs Object Array" type="Fct" />
+    </class>
+    <class name="BRTTIRefCount" base="root class" />
+    <class name="BPersistent" base="BRTTIRefCount">
+        <prop name="Name" type="String" />
+    </class>
+    <class name="DynamicSystemDescManager" base="BPersistent">
+        <prop name="Dynamic System Descs Array" type="Fct" />
+    </class>
+    <data class="DynamicSystemDescManager" id="0x300BD300">
+        <prop name="Name" data="DynamicSystemDescs Manager" />
+        <prop name="Dynamic System Descs Array" elements="1">
+            <funcpropdata>
+                <data class="DynamicSystemDesc" id="0xE6984910">
+                    <prop name="Name" data="COLLISION_CONVEX_FORD_FUSION_NASCAR13" />
+                    <prop name="BoundingSphere" data="0;0;0;1" />
+                    <prop name="Dynamic System Descs Object Array" elements="1">
+                        <funcpropdata ObjectNumber0="COLLISION_CONVEX_FORD_FUSION_NASCAR13" />
+                    </prop>
+                </data>
+            </funcpropdata>
+        </prop>
+    </data>
+</Reflection>
